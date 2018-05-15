@@ -1,3 +1,28 @@
+/*
+
+#License
+
+Copyright (c) 2018 Wesley Otto Garcia Utsuomiya 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+*/
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -27,7 +52,7 @@ public class Principal {
 		// Criando a planilha notas
 		Sheet planilha = workbook.createSheet("Notas");
 
-		// Definindo alguns padrıes
+		// Definindo alguns padr√µes
 		planilha.setDefaultColumnWidth(15);
 		planilha.setDefaultRowHeight((short) 400);
 
@@ -70,7 +95,7 @@ public class Principal {
 
 	}
 
-	// MÈtodo de fonte do cabeÁalho
+	// M√©todo de fonte do cabe√ßalho
 
 	public static Font getFontHeader(Font font) {
 
@@ -83,7 +108,7 @@ public class Principal {
 		return font;
 	}
 
-	// Crio meu cabeÁalho e aplico tanto estilo/fonte
+	// Crio meu cabe√ßalho e aplico tanto estilo/fonte
 
 	public static void getStyleHeader(CellStyle style, Row linha, Cell celula, Font font, Sheet planilha) {
 
@@ -101,7 +126,7 @@ public class Principal {
 	
 	}
 
-	// MÈtodo para escrever na planilha
+	// M√©todo para escrever na planilha
 	public static void writeSheet(Row linha, Cell celula, String nome, int nota, int numeroLinha, Sheet planilha) {
 
 		linha = planilha.createRow(numeroLinha);

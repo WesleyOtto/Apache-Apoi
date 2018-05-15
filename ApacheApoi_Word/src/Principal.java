@@ -1,3 +1,29 @@
+/*
+
+#License
+
+Copyright (c) 2018 Wesley Otto Garcia Utsuomiya 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+*/
+
 import java.io.File;
 import java.io.FileOutputStream;
 import javax.swing.JOptionPane;
@@ -31,14 +57,14 @@ public class Principal {
 		body.setFontSize(12);
 		body.addTab(); // Tab para iniciar o texto
 		body.setText(
-				"Star Wars (Guerra nas Estrelas (título no Brasil) ou Guerra das Estrelas (título em Portugal)) é uma franquia do tipo "
-						+ "space opera estadunidense criada pelo cineasta George Lucas que conta com uma série de oito filmes de fantasia científica e um spin-off. "
-						+ "O primeiro filme foi lançado apenas com o título Star Wars em 25 de maio de 1977"
-						+ ", e tornou-se um fenômeno mundial inesperado de cultura popular, sendo responsável pelo início da era dos blockbusters: "
-						+ "Super produções cinematográficas que fazem sucesso nas bilheterias e viram franquias com brinquedos, jogos, livros, etc. Foi "
-						+ "seguido por duas sequências, The Empire Strikes Back e Return of the Jedi, lançadas com intervalos de três anos. Esta primeira "
-						+ "trilogia segue o trio icônico: Luke Skywalker, Han Solo e Princesa Leia, que luta na Aliança Rebelde para derrubar o tirano Império "
-						+ "Galáctico; paralelamente ocorre a jornada de Luke para se tornar um cavaleiro Jedi e a luta contra Darth Vader, um ex-Jedi que sucumbiu ao Lado Sombrio da Força e ao Imperador.");
+				"Star Wars (Guerra nas Estrelas (tÃ­tulo no Brasil) ou Guerra das Estrelas (tÃ­tulo em Portugal)) Ã© uma franquia do tipo "
+						+ "space opera estadunidense criada pelo cineasta George Lucas que conta com uma sÃ©rie de oito filmes de fantasia cientÃ­fica e um spin-off. "
+						+ "O primeiro filme foi lanÃ§ado apenas com o tÃ­tulo Star Wars em 25 de maio de 1977"
+						+ ", e tornou-se um fenÃ´meno mundial inesperado de cultura popular, sendo responsÃ¡vel pelo inÃ­cio da era dos blockbusters: "
+						+ "Super produÃ§Ãµes cinematogrÃ¡ficas que fazem sucesso nas bilheterias e viram franquias com brinquedos, jogos, livros, etc. Foi "
+						+ "seguido por duas sequÃªncias, The Empire Strikes Back e Return of the Jedi, lanÃ§adas com intervalos de trÃªs anos. Esta primeira "
+						+ "trilogia segue o trio icÃ´nico: Luke Skywalker, Han Solo e Princesa Leia, que luta na AlianÃ§a Rebelde para derrubar o tirano ImpÃ©rio "
+						+ "GalÃ¡ctico; paralelamente ocorre a jornada de Luke para se tornar um cavaleiro Jedi e a luta contra Darth Vader, um ex-Jedi que sucumbiu ao Lado Sombrio da ForÃ§a e ao Imperador.");
 
 		body.addBreak();
 		body.addBreak();
@@ -48,12 +74,12 @@ public class Principal {
 		XWPFParagraph r1 = document.createParagraph();
 		r1.setAlignment(ParagraphAlignment.CENTER);
 		XWPFRun referencias = r1.createRun();
-		styleRun(referencias, "Referencias Bibliográficas", "Arial", "238E68", 18);
+		styleRun(referencias, "Referencias BibliogrÃ¡ficas", "Arial", "238E68", 18);
 
 		// Referencias
 		XWPFParagraph WebSite = document.createParagraph();
 		XWPFRun ref = WebSite.createRun(); // Crio o meu corpo do texto
-		ref.setText("__________. STAR WARS. Disponível em: <https://pt.wikipedia.org/wiki/Star_Wars>. Acessado em 13 de maio de 2018 às 23h16min. ");
+		ref.setText("__________. STAR WARS. DisponÃ­vel em: <https://pt.wikipedia.org/wiki/Star_Wars>. Acessado em 13 de maio de 2018 Ã s 23h16min. ");
 
 		document.write(file);
 		file.close();
